@@ -6,7 +6,8 @@ class Answer {
 }
 
 class Question {
-  constructor(prompt_text, last_one=true, picQ_file = "pictures/default.jpg", ans_arr=[]){
+  constructor(prompt_text, last_one=true, picQ_file = "pictures/default.jpg",
+              ans_arr=[]){
     this.prompt = prompt_text; //Text for the prompt
     this.picQ = picQ_file;  //Picture file name for the prompt
     this.end = last_one;
@@ -247,7 +248,190 @@ answers = [];
 answers.push(new Answer(button_text="Click here for more", next_loc=7));
 questions[12].answers = answers;
 
+//Question 13
+questions.push(new Question(
+  prompt_text= "Well, if you decide you are interested in finding out more, I’d"
+             + " be glad to chat with you about it. Check out our dialogue"
+             + " times.",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="Dialogue Times", next_loc=0));
+questions[13].answers = answers;
 
+//Question 14
+questions.push(new Question(
+  prompt_text= "Let’s start at a good beginning point . . . God loves us and "
+             + " has a purpose for our lives. The Bible says it this way, "
+             + "(John 3:16) “For God so loved the world that he gave his only "
+             + "Son, so that everyone who believes in him will not perish but "
+             + "have eternal life.” God’s purpose is that we have eternal life."
+             + " Read more about God’s purpose.",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="God/'s Purpose'", next_loc=15));
+questions[14].answers = answers;
+
+//Question 15 -- GOD'S PURPOSE
+questions.push(new Question(
+  prompt_text= "",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="What's the Bible say", next_loc=0));
+questions[15].answers = answers;
+
+//Question 16  --  Our Rebellion and Need for Help
+questions.push(new Question(
+  prompt_text= "",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="So, what's God's plan?", next_loc=0));
+questions[16].answers = answers;
+
+//Question 17  -- God's Plan
+questions.push(new Question(
+  prompt_text= "",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="What's our part?", next_loc=0));
+questions[17].answers = answers;
+
+//Question 18 -- Our response
+questions.push(new Question(
+  prompt_text= "",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="Yes", next_loc=19),
+             new Answer(button_text="No", next_loc=24));
+questions[18].answers = answers;
+
+//Question 19
+questions.push(new Question(
+  prompt_text= "Would you be willing to receive God’s gift of eternal life?",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="Yes", next_loc=20),
+             new Answer(button_text="No", next_loc=24));
+questions[19].answers = answers;
+
+//Question 20
+questions.push(new Question(
+  prompt_text= "Are you willing to turn from your sin and place your faith in"
+             + " Jesus right now?",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="Yes", next_loc=21),
+             new Answer(button_text="No", next_loc=24));
+questions[20].answers = answers;
+
+//Question 21
+questions.push(new Question(
+  prompt_text= "Just to clarify—To receive Jesus you must:\n",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="Yes", next_loc=22),
+             new Answer(button_text="No", next_loc=24));
+questions[21].answers = answers;
+
+//Question 22
+questions.push(new Question(
+  prompt_text= "Welcome to the family of God. You have just made the most "
+             + "important decision of your life.  You can be sure you are saved"
+             + "and have eternal life. Read Romans 10:13 again: “For ‘Anyone "
+             + "who calls on the name of the Lord will be saved.’” It isn’t "
+             + "someone’s opinion.  You have God’s Word on it!",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="One more thing...", next_loc=23));
+questions[22].answers = answers;
+
+//Question 23
+questions.push(new Question(
+  prompt_text= "Receiving Jesus into your life is only the beginning of a "
+             + "wonderful experience. Now that Christ is your Lord, you’ll want"
+             + " to know how you can grow as a Christian. I/’d love for you to "
+             + "join me at the Baptist Student Union or a local church. Also, "
+             + "it/’d be great if you connected with a growing Christian who "
+             + "can help you grow, too. I/’d be glad to help in that process if "
+             + "you’d give me some contact information. If you’re under 18, "
+             + "please make sure it/’s okay with mom or dad before you do",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="", next_loc=0),
+             new Answer(button_text="", next_loc=0));
+questions[23].answers = answers;
+
+//Question 24
+questions.push(new Question(
+  prompt_text= "I understand. It’s a huge decision. You might want to go back "
+             + "to our opening page and review. Or, if you decide you are "
+             + "interested in finding out more, I’d be glad to chat with you "
+             + "about it. Check out our dialogue times.",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="Opening Page", next_loc=0),
+             new Answer(button_text="Dialogue Times", next_loc=0));
+questions[24].answers = answers;
+
+//Question 25
+questions.push(new Question(
+  prompt_text= "Hey, you may not believe it but, you’re a bunch closer to "
+             + "salvation than you may realize.  You are aware that you don’t "
+             + "deserve to go to heaven. That’s the first step in the whole "
+             + "process. If God had a purpose and plan for your life, wouldn/’t "
+             + "you want to know it?",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="Yes", next_loc=14),
+             new Answer(button_text="No", next_loc=13));
+questions[25].answers = answers;
+
+//Question 26
+questions.push(new Question(
+  prompt_text= "Now, that’s a good, honest answer. If you/’re still interested,"
+             + " let me ask you another question.",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="Next", next_loc=10));
+questions[26].answers = answers;
+
+//Question 27
+questions.push(new Question(
+  prompt_text= "Now, that’s a good, honest answer. You really can know.",
+  last_one=false,
+  picQ_file = ""
+));
+answers = [];
+answers.push(new Answer(button_text="Click On!", next_loc=14),
+             new Answer(button_text="", next_loc=0));
+questions[27].answers = answers;
 
 //////////////////////////
 //   End of Questions   //
