@@ -1,7 +1,7 @@
 class Answer {
-  constructor(button_text="DEFAULT",next_loc=0){
-    this.btn_text = button_text;
-    this.loc = next_loc;
+  constructor(button_text="DEFAULT", next_loc=0){
+    this.btn_text = button_text; //Text to be displaed on the button
+    this.loc = next_loc; //Locations to be linked to.
   }
 }
 
@@ -10,8 +10,8 @@ class Question {
               ans_arr=[]){
     this.prompt = prompt_text; //Text for the prompt
     this.picQ = picQ_file;  //Picture file name for the prompt
-    this.end = last_one;
-    this.answers = ans_arr;
+    this.end = last_one;  //Indicates if it is the last page on its branch
+    this.answers = ans_arr; //Array of all the answer buttons
   }
 }
 
@@ -117,8 +117,8 @@ questions[4].answers = answers;
 
 //Question 5
 questions.push(new Question(
-  prompt_text= "While yours is a widely held belief, would you like to know "
-             + "what the Bible says about what happens after death?",
+  prompt_text= "Many people believe as you do. If the original, unaltered Bible"
+             + " said something different, would you like to know it?",
   last_one=false,
   picQ_file = ""
 ));
@@ -130,7 +130,7 @@ questions[5].answers = answers;
 //Question 6
 questions.push(new Question(
   prompt_text= "Congratulations! You hold one of the most popular views of how "
-             + "to achieve heaven. If the Bible, God’s Word, showed a different"
+             + "to achieve heaven. If the Bible, God's Word, showed a different"
              + " view would you want to know it?",
   last_one=false,
   picQ_file = ""
@@ -142,32 +142,32 @@ questions[6].answers = answers;
 
 //Question 7
 questions.push(new Question(
-  prompt_text= "I’m so glad you’re still reading! Here it is: Salvation, "
+  prompt_text= "I'm so glad you're still reading! Here it is: Salvation, "
              + " according to the Bible, is due to God's grace and love. He "
              + "provided Jesus as the sacrifice for the sins of the world. It"
              + " is through faith in the crucified and risen Jesus that we may"
-             + " be saved. Works are excluded. You can’t do enough or be good "
+             + " be saved. Works are excluded. You can't do enough or be good "
              + "enough! (John 1:12; 3:16; Rom. 10:9-13; Eph. 2:8-9).",
   last_one=false,
   picQ_file = ""
 ));
 answers = [];
-answers.push(new Answer(button_text="If you’re still interested in reading "
+answers.push(new Answer(button_text="If you're still interested in reading "
                                    + "more, click here", next_loc=14));
 questions[7].answers = answers;
 
 //Question 8
 questions.push(new Question(
-  prompt_text= "Yup! You have it (not that you earned it in any way). It’s "
+  prompt_text= "Yup! You have it (not that you earned it in any way). It's "
              + "only Jesus and what He did, and continues to do, in our lives"
              + " that matters. Our only part in the process is to agree with"
-             + " what God says about us in His Word (we’re sinners) and to "
+             + " what God says about us in His Word (we're sinners) and to "
              + " receive His gift of salvation. ",
   last_one=false,
   picQ_file = ""
 ));
 answers = [];
-answers.push(new Answer(button_text="If you’ve already done that, click here.",
+answers.push(new Answer(button_text="If you've already done that, click here.",
              next_loc=23));
 questions[8].answers = answers;
 
@@ -216,7 +216,7 @@ questions.push(new Question(
   prompt_text= "Here it is . . . the Bible, in Hebrews 9:27, says “And just as "
   + " it is destined that each person dies only once and after that comes "
   + "judgment . . .” Yeah, okay. But, on what basis is that judgement to be "
-  + " made? Where do I start to find out—to know that I’m going to heaven "
+  + " made? Where do I start to find out—to know that I'm going to heaven "
   + "when I die? ",
   last_one=false,
   picQ_file = ""
@@ -230,7 +230,7 @@ questions.push(new Question(
   prompt_text= "Here it is . . . the Bible, in Hebrews 9:27 KING JAMES VERSION,"
              + " says “And as it is appointed unto men once to die, but after"
              + " this the judgment . . .” On what basis is that judgement to be"
-             + " made? Where do I start to find out—to know that I’m going to"
+             + " made? Where do I start to find out—to know that I'm going to"
              + " heaven when I die? Wait . . . you need to know that all "
              + " scripture quoted after this is from the New Living "
              + "Translation. While all translations are somewhat subject to the"
@@ -250,7 +250,7 @@ questions[12].answers = answers;
 
 //Question 13
 questions.push(new Question(
-  prompt_text= "Well, if you decide you are interested in finding out more, I’d"
+  prompt_text= "Well, if you decide you are interested in finding out more, I'd"
              + " be glad to chat with you about it. Check out our dialogue"
              + " times.",
   last_one=false,
@@ -262,12 +262,12 @@ questions[13].answers = answers;
 
 //Question 14
 questions.push(new Question(
-  prompt_text= "Let’s start at a good beginning point . . . God loves us and "
+  prompt_text= "Let's start at a good beginning point . . . God loves us and "
              + " has a purpose for our lives. The Bible says it this way, "
              + "(John 3:16) “For God so loved the world that he gave his only "
              + "Son, so that everyone who believes in him will not perish but "
-             + "have eternal life.” God’s purpose is that we have eternal life."
-             + " Read more about God’s purpose.",
+             + "have eternal life.” God's purpose is that we have eternal life."
+             + " Read more about God's purpose.",
   last_one=false,
   picQ_file = ""
 ));
@@ -318,7 +318,7 @@ questions[18].answers = answers;
 
 //Question 19
 questions.push(new Question(
-  prompt_text= "Would you be willing to receive God’s gift of eternal life?",
+  prompt_text= "Would you be willing to receive God's gift of eternal life?",
   last_one=false,
   picQ_file = ""
 ));
@@ -355,8 +355,8 @@ questions.push(new Question(
   prompt_text= "Welcome to the family of God. You have just made the most "
              + "important decision of your life.  You can be sure you are saved"
              + "and have eternal life. Read Romans 10:13 again: “For ‘Anyone "
-             + "who calls on the name of the Lord will be saved.’” It isn’t "
-             + "someone’s opinion.  You have God’s Word on it!",
+             + "who calls on the name of the Lord will be saved.'” It isn't "
+             + "someone's opinion.  You have God's Word on it!",
   last_one=false,
   picQ_file = ""
 ));
@@ -367,13 +367,13 @@ questions[22].answers = answers;
 //Question 23
 questions.push(new Question(
   prompt_text= "Receiving Jesus into your life is only the beginning of a "
-             + "wonderful experience. Now that Christ is your Lord, you’ll want"
-             + " to know how you can grow as a Christian. I/’d love for you to "
+             + "wonderful experience. Now that Christ is your Lord, you'll want"
+             + " to know how you can grow as a Christian. I/'d love for you to "
              + "join me at the Baptist Student Union or a local church. Also, "
-             + "it/’d be great if you connected with a growing Christian who "
-             + "can help you grow, too. I/’d be glad to help in that process if "
-             + "you’d give me some contact information. If you’re under 18, "
-             + "please make sure it/’s okay with mom or dad before you do",
+             + "it/'d be great if you connected with a growing Christian who "
+             + "can help you grow, too. I/'d be glad to help in that process if "
+             + "you'd give me some contact information. If you're under 18, "
+             + "please make sure it/'s okay with mom or dad before you do",
   last_one=false,
   picQ_file = ""
 ));
@@ -384,9 +384,9 @@ questions[23].answers = answers;
 
 //Question 24
 questions.push(new Question(
-  prompt_text= "I understand. It’s a huge decision. You might want to go back "
+  prompt_text= "I understand. It's a huge decision. You might want to go back "
              + "to our opening page and review. Or, if you decide you are "
-             + "interested in finding out more, I’d be glad to chat with you "
+             + "interested in finding out more, I'd be glad to chat with you "
              + "about it. Check out our dialogue times.",
   last_one=false,
   picQ_file = ""
@@ -398,10 +398,10 @@ questions[24].answers = answers;
 
 //Question 25
 questions.push(new Question(
-  prompt_text= "Hey, you may not believe it but, you’re a bunch closer to "
-             + "salvation than you may realize.  You are aware that you don’t "
-             + "deserve to go to heaven. That’s the first step in the whole "
-             + "process. If God had a purpose and plan for your life, wouldn/’t "
+  prompt_text= "Hey, you may not believe it but, you're a bunch closer to "
+             + "salvation than you may realize.  You are aware that you don't "
+             + "deserve to go to heaven. That's the first step in the whole "
+             + "process. If God had a purpose and plan for your life, wouldn/'t "
              + "you want to know it?",
   last_one=false,
   picQ_file = ""
@@ -413,7 +413,7 @@ questions[25].answers = answers;
 
 //Question 26
 questions.push(new Question(
-  prompt_text= "Now, that’s a good, honest answer. If you/’re still interested,"
+  prompt_text= "Now, that's a good, honest answer. If you/'re still interested,"
              + " let me ask you another question.",
   last_one=false,
   picQ_file = ""
@@ -424,7 +424,7 @@ questions[26].answers = answers;
 
 //Question 27
 questions.push(new Question(
-  prompt_text= "Now, that’s a good, honest answer. You really can know.",
+  prompt_text= "Now, that's a good, honest answer. You really can know.",
   last_one=false,
   picQ_file = ""
 ));
