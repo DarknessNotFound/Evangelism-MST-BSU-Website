@@ -451,6 +451,25 @@ function question_exists(index) {
   return true;
 }
 
+function btn_formator(num_btns, target) {
+  //List of all the possible classes to add
+  class_list = ["btn-one-answer", "btn-even-answer", "btn-odd-answer"];
+
+  //Remove all previous class from class list
+  class_list.forEach(i => {
+    if(target.i)
+      target.removeChild(target.i);
+  });
+
+  //Add the correct class due to amount of answers
+  if(num_btns === 1)  //If a single answer
+    target.className += class_list[0];
+  else if(num_btns % 2 === 1)  //If a odd amount of answers
+    target.className += class_list[2];
+  else      //If a even amount of answers
+  target.className += class_list[1];
+}
+
 function selectQuestion(index) {
   //   Variable setup
   btn_options = document.getElementById('option-buttons');//div holding buttons
@@ -474,15 +493,12 @@ function selectQuestion(index) {
     button.classList.add('btn');  //Style the button
 
     //Adds the functionality to go to another question.
-    button.addEventListener('click', () => selectQuestion(i.loc))
+    button.addEventListener('click', () => selectQuestion(i.loc));
 
     btn_options.appendChild(button); //Add the button the the button list
   });
 
-  switch(btn_options.childElementCount) {
-    case 1:
-      
-  }
+  btn_formator(btn_options.childElementCount, btn_options);
 
   return;
 }

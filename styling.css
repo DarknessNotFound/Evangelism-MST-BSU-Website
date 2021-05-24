@@ -57,16 +57,21 @@ body {
   width: 80px;
   height: 100px;
 }
-.btn-odd {
 
+.btn-one-answer {
+  grid-template-columns: repeat(1, auto);
 }
 
-.btn-even {
-
+.btn-odd-answer {
+  grid-template-columns: repeat(2, auto);
 }
+
+.btn-even-answer {
+  grid-template-columns: repeat(2, auto);
+}
+
 .btn-grid{
   display: grid;
-  grid-template-columns: repeat(3, auto);
   justify-content: flex-center;
   gap: 10px;
   margin-top: 20px inherit;
