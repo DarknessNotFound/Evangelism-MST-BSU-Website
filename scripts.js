@@ -438,6 +438,8 @@ questions[27].answers = answers;
 //////////////////////////
 
 start();
+
+
 function start() {
   selectQuestion(0);
   return;
@@ -476,6 +478,11 @@ function selectQuestion(index) {
 
     btn_options.appendChild(button); //Add the button the the button list
   });
+
+  switch(btn_options.childElementCount) {
+    case 1:
+      
+  }
 
   return;
 }
