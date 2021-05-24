@@ -215,7 +215,7 @@ questions[10].answers = answers;
 questions.push(new Question(
   prompt_text= "Here it is . . . the Bible, in Hebrews 9:27, says “And just as "
   + " it is destined that each person dies only once and after that comes "
-  + "judgment . . .” Yeah, okay. But, on what basis is that judgement to be "
+  + "judgment . . .\" Yeah, okay. But, on what basis is that judgement to be "
   + " made? Where do I start to find out—to know that I'm going to heaven "
   + "when I die? ",
   last_one=false,
@@ -228,9 +228,9 @@ questions[11].answers = answers;
 //Question 12
 questions.push(new Question(
   prompt_text= "Here it is . . . the Bible, in Hebrews 9:27 KING JAMES VERSION,"
-             + " says “And as it is appointed unto men once to die, but after"
-             + " this the judgment . . .” On what basis is that judgement to be"
-             + " made? Where do I start to find out—to know that I'm going to"
+             + " says \"And as it is appointed unto men once to die, but after"
+             + " this the judgment . . .\" On what basis is that judgement to be"
+             + " made? Where do I start to find out-to know that I'm going to"
              + " heaven when I die? Wait . . . you need to know that all "
              + " scripture quoted after this is from the New Living "
              + "Translation. While all translations are somewhat subject to the"
@@ -239,7 +239,7 @@ questions.push(new Question(
              + " discover the oldest, most reliable manuscripts available "
              + "today. Many of these had not been discovered in 1611 A.D. when"
              + " the KJV was translated. Interestingly, no important errors"
-             + " (other than an uncrossed “t” or missing period) have been "
+             + " (other than an uncrossed \"t\" or missing period) have been "
              + " discovered.",
   last_one=false,
   picQ_file = ""
@@ -266,7 +266,7 @@ questions.push(new Question(
              + " has a purpose for our lives. The Bible says it this way, "
              + "(John 3:16) “For God so loved the world that he gave his only "
              + "Son, so that everyone who believes in him will not perish but "
-             + "have eternal life.” God's purpose is that we have eternal life."
+             + "have eternal life.\" God's purpose is that we have eternal life."
              + " Read more about God's purpose.",
   last_one=false,
   picQ_file = ""
@@ -355,7 +355,7 @@ questions.push(new Question(
   prompt_text= "Welcome to the family of God. You have just made the most "
              + "important decision of your life.  You can be sure you are saved"
              + "and have eternal life. Read Romans 10:13 again: “For ‘Anyone "
-             + "who calls on the name of the Lord will be saved.'” It isn't "
+             + "who calls on the name of the Lord will be saved.'\" It isn't "
              + "someone's opinion.  You have God's Word on it!",
   last_one=false,
   picQ_file = ""
